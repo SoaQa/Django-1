@@ -1,6 +1,8 @@
 from django.urls import path, re_path
-
 from .views import *
+
+app_name = "women"
+
 
 urlpatterns = [
     path('', WomenHome.as_view(), name='home'),
